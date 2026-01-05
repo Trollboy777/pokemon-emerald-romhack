@@ -4494,11 +4494,11 @@ static const struct TrainerMon sParty_Roxanne1[] = {
     {
     .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
     .lvl = 14,
-    .species = SPECIES_RHYHORN,
-    .heldItem = ITEM_RINDO_BERRY,
+    .species = SPECIES_PONYTA,
+    .heldItem = ITEM_PASSHO_BERRY,
     .nature = NATURE_ADAMANT,
-    .ability = ABILITY_LIGHTNING_ROD,
-    .moves = {MOVE_ROCK_TOMB, MOVE_HORN_ATTACK, MOVE_BULLDOZE, MOVE_ROCK_SMASH}
+    .ability = ABILITY_FLASH_FIRE,
+    .moves = {MOVE_FLAME_WHEEL, MOVE_EMBER, MOVE_FLAMETHROWER, MOVE_TAIL_WHIP}
     },
     {
     .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
@@ -13031,13 +13031,13 @@ static const struct TrainerMon sParty_Roxanne2[] = {
     {
     .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
     .lvl = 14,
-    .species = SPECIES_RHYHORN,
-    .heldItem = ITEM_RINDO_BERRY,
+    .species = SPECIES_SIZZLIPEDE,
+    .heldItem = ITEM_PASSHO_BERRY,
     .nature = NATURE_ADAMANT,
     //custom adamant
            //hp,atk,def,spatk,spdef,speed
     .ev = TRAINER_PARTY_EVS( 0, 36, 0, 0, 0, 36 ),
-    .ability = ABILITY_LIGHTNING_ROD,
+    .ability = ABILITY_FLASH_FIRE,
     .moves = {MOVE_ROCK_TOMB, MOVE_HORN_ATTACK, MOVE_BULLDOZE, MOVE_ROCK_SMASH}
     },
     {
@@ -13082,7 +13082,7 @@ static const struct TrainerMon sParty_Roxanne3[] = {
     {
     .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
     .lvl = 14,
-    .species = SPECIES_RHYHORN,
+    .species = SPECIES_CHARMANDER,
     .heldItem = ITEM_RINDO_BERRY,
     .nature = NATURE_ADAMANT,
     //custom adamant
@@ -13133,7 +13133,7 @@ static const struct TrainerMon sParty_Roxanne4[] = {
     {
     .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
     .lvl = 14,
-    .species = SPECIES_RHYHORN,
+    .species = SPECIES_CYNDAQUIL,
     .heldItem = ITEM_RINDO_BERRY,
     .nature = NATURE_ADAMANT,
     //custom adamant
@@ -13184,7 +13184,7 @@ static const struct TrainerMon sParty_Roxanne5[] = {
     {
     .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
     .lvl = 14,
-    .species = SPECIES_RHYHORN,
+    .species = SPECIES_LITLEO,
     .heldItem = ITEM_RINDO_BERRY,
     .nature = NATURE_ADAMANT,
     //custom adamant
