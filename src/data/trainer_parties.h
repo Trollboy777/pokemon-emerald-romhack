@@ -4752,7 +4752,7 @@ static const struct TrainerMon sParty_Norman1[] = {
     {
     .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
     .lvl = 59,
-    .species = SPECIES_GRENINJA_BATTLE_BOND,
+    .species = SPECIES_GRENINJA,
     .heldItem = ITEM_CHOICE_SPECS,
     .nature = NATURE_TIMID,
     .ev = TRAINER_PARTY_EVS_TIMID(),

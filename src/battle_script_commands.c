@@ -10896,6 +10896,24 @@ static void Cmd_various(void)
             gBattlescriptCurrInstr = BattleScript_BattleBondActivatesOnMoveEndAttacker;
             return;
         }
+        u8 side = GetBattlerSide(battler);
+
+        if (gBattleMons[gBattlerAttacker].species == SPECIES_GRENINJA
+            && gBattleMons[gBattlerAttacker].ability == ABILITY_BATTLE_BOND
+            && HasAttackerFaintedTarget()
+            && CalculateBattlerPartyCount(gBattlerTarget) > 1
+            && !(gBattleStruct->battleBondTransformed[GetBattlerSide(gBattlerAttacker)] & (1u << gBattlerPartyIndexes[gBattlerAttacker])))
+        {
+           gBattleStruct->battleBondTransformed[side] |= 1u << gBattlerPartyIndexes[battler];
+           PREPARE_SPECIES_BUFFER(gBattleTextBuff1, gBattleMons[battler].species);
+           gBattleStruct->changedSpecies[side][gBattlerPartyIndexes[battler]] = gBattleMons[battler].species;
+           gBattleMons[battler].species = SPECIES_GRENINJA_ASH;
+
+           BattleScriptPushCursor();
+           gBattlescriptCurrInstr = BattleScript_BattleBondActivatesOnMoveEndAttacker;
+           return;
+        }
+        
         break;
     }
     case VARIOUS_CONSUME_BERRY:
